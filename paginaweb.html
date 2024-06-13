@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Kishi</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="pagina.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6 text-center">
+                <h1>Pizzeria Kishi</h1>
+                <img src="parriba.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>Nuestras Opciones</h2>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4 class="card-title">Pizza Margarita $8.500</h4>
+                        <img src="pmargarita.jpg" alt="" class="img-fluid mb-3">
+                        <ul class="list-group">
+                            <li class="list-group-item">Albahaca</li>
+                            <li class="list-group-item">Mozzarella</li>
+                            <li class="list-group-item">Salsa de tomate/salsa agridulce</li>
+                        </ul>
+                        <form id="orderForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese su número">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="direccionInput" placeholder="Ingrese su dirección">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese hora">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Agregar Pedido</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Pedidos</h2>
+                <ul id="pedidosList" class="list-group">
+                    <!-- This list will be dynamically populated with submitted orders -->
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h4 class="card-title">Pizza cuatro quesos $9.990</h4>
+                    <img src="cuatroquesos.jpg" alt="" class="img-fluid mb-3">
+                    <ul class="list-group">
+                        <li class="list-group-item">Queso mantecoso</li>
+                        <li class="list-group-item">Queso roquefort</li>
+                        <li class="list-group-item">Queso mozarella</li>
+                        <li class="list-group-item">Salsa de tomate/salsa agridulce</li>
+                    </ul>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese su número">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="direccionInput" placeholder="Ingrese su dirección">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese hora">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Agregar Pedido</button>
+                    </form>
+                </div> 
+                <div class="card-body">
+                    <h4 class="card-title">Pizza Pepperoni $8.500</h4>
+                    <img src="pepperoni.jpg" alt="" class="img-fluid mb-3">
+                    <ul class="list-group">
+                        <li class="list-group-item">Queso mozarella</li>
+                        <li class="list-group-item">Pepperoni</li>
+                        <li class="list-group-item">Albahaca</li>
+                        <li class="list-group-item">Salsa de tomate/salsa agridulce</li>
+                    </ul>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese su número">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="direccionInput" placeholder="Ingrese su dirección">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese hora">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Agregar Pedido</button>
+                    </form>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Pizza Napolitana $9.500</h4>
+                    <img src="napolitana.jpg" alt="" class="img-fluid mb-3">
+                    <ul class="list-group">
+                        <li class="list-group-item">Albahaca</li>
+                        <li class="list-group-item">Tomate</li>
+                        <li class="list-group-item">Aceitunas</li>
+                        <li class="list-group-item">Queso mozzarella</li>
+                        <li class="list-group-item">Salsa de tomate/salsa agridulce</li>
+                    </ul>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese su número">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="direccionInput" placeholder="Ingrese su dirección">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese hora">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Agregar Pedido</button>
+                    </form>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Pizza Champiñones $9.000</h4>
+                    <img src="champiñones.jpg" alt="" class="img-fluid mb-3">
+                    <ul class="list-group">
+                        <li class="list-group-item">Champiñones</li>
+                        <li class="list-group-item">Queso mozzarella</li>
+                        <li class="list-group-item">Queso parmesano</li>
+                        <li class="list-group-item">Aceitunas</li>
+                        <li class="list-group-item">Salsa de tomate/salsa agridulce</li>
+                    </ul>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese su número">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="direccionInput" placeholder="Ingrese su dirección">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese hora">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Agregar Pedido</button>
+                    </form>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Pizza Personalizada 10.000</h4>
+                    <img src="pizzi.png" alt="" class="img-fluid mb-3">
+                    <ul class="list-group">
+                        <li class="list-group-item">1. Albahaca</li>
+                        <li class="list-group-item">2. Oregano</li>
+                        <li class="list-group-item">3. Queso mozarella</li>
+                        <li class="list-group-item">4. Queso parmesano</li>
+                        <li class="list-group-item">5. Queso azul</li>
+                        <li class="list-group-item">6. Tomate</li>
+                        <li class="list-group-item">7. Tomates cherry</li>
+                        <li class="list-group-item">8. Aceitunas verdes</li>
+                        <li class="list-group-item">9. Aceitunas negras</li>
+                        <li class="list-group-item">10. Carne</li>
+                        <li class="list-group-item">11. Pollo</li>
+                        <li class="list-group-item">12. Jamón</li>
+                        <li class="list-group-item">13. Salchicha</li>
+                        <li class="list-group-item">14. Chorizo</li>
+                        <li class="list-group-item">15. Salsa de tomate</li>
+                        <li class="list-group-item">16. Salsa agridulce</li>
+                    </ul>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="direccionInput" placeholder="Ingrese los ingredientes deseados">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese su número">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="numeroInput" placeholder="Ingrese hora">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="direccionInput" placeholder="Ingrese su dirección">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Agregar Pedido</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Add more pizza cards similarly -->
+        </div>
+    </div>
+
+    <script src="paginaWEB.js"></script>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="paginaWEB.js"></script>
+</body>
+</html>
